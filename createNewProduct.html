@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+      <nav class="navbar-container">
+        <div class="navbar-logo">
+          <img src="./images/placeholder design.jpg" alt="">
+        </div>
+        <div class="navbar-links">
+          <ul class="list-items">
+            <li><a href="./clothing.html">Products</a></li>
+            <li><a href="./createNewProduct.html">Add Product</a></li>
+            <li><a href="./orderDetails.html">Orders</a></li>
+          </ul>
+        </div>
+        <!-- Hamburger Menu for smaller screens -->
+        <div class="hamburger-menu" onclick="toggleDropdown()">
+          &#9776;
+        </div>
+      </nav>
+
+      <div class="dropdown-menu">
+        <ul class="list-items">
+          <li><a href="./clothing.html">Products</a></li>
+          <li><a href="./createNewProduct.html">Add Product</a></li>
+          <li><a href="./orderDetails.html">Orders</a></li>
+        </ul>
+      </div>
+    </header>
+
+<!-- main section -->
+
+
+<footer>
+    <p>&copy; <span id="current-year"></span> Virtual Wardrobe. All rights reserved.</p>
+  </footer>
+  <script src="./javaScript/currentDate.js"></script>
+     <script src="./javaScript/addProduct.js"></script>
+</body>
+</html>

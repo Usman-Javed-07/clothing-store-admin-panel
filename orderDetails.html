@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar-container">
+        <div class="navbar-logo">
+          <img src="./images/placeholder design.jpg" alt="">
+        </div>
+        <div class="navbar-links">
+          <ul class="list-items">
+            <li><a href="./clothing.html">Products</a></li>
+            <li><a href="./createNewProduct.html">Add Product</a></li>
+            <li><a href="./orderDetails.html">Orders</a></li>
+          </ul>
+        </div>
+        <!-- Hamburger Menu for smaller screens -->
+        <div class="hamburger-menu" onclick="toggleDropdown()">
+          &#9776;
+        </div>
+      </nav>
+
+      <div class="dropdown-menu">
+        <ul class="list-items">
+          <li><a href="./clothing.html">Products</a></li>
+          <li><a href="./createNewProduct.html">Add Product</a></li>
+          <li><a href="./orderDetails.html">Orders</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+      <div id="ordersContainer">
+          <h2 class="order--details">Order Details</h2>
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Total Amount</th>
+                <th>Order Items</th>
+                <th>Created At</th>
+              </tr>
+            </thead>
+            <tbody>
+      
+            </tbody>
+          </table>
+        </div>
+   
+      <footer>
+        <p>&copy; <span id="current-year"></span> Virtual Wardrobe. All rights reserved.</p>
+      </footer>
+      <script src="./javaScript/orders.js"></script>
+      <script src="./javaScript/currentDate.js"></script>
+</body>
+</html>
