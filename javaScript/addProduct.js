@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const { label: quantityLabel, input: quantityInput } = createField('Quantity:', 'number', 'quantity', 'quantity', true);
     quantityInput.min = '1';
   
-    const { label: materialLabel, input: materialInput } = createField('Material:', 'text', 'material', 'material', true);
+    const { label: materialLabel, input: materialInput } = createField('Material:', 'text', 'material', 'material', false);
   
-    const { label: careLabel, input: careInput } = createField('Care Instructions:', 'text', 'care', 'care', true);
+    const { label: careLabel, input: careInput } = createField('Care Instructions:', 'text', 'care', 'care', false);
   
-    const { label: fitLabel, input: fitInput } = createField('Fit:', 'text', 'fit', 'fit', true);
+    const { label: fitLabel, input: fitInput } = createField('Fit:', 'text', 'fit', 'fit', false);
   
-    const { label: detailsLabel, input: detailsInput } = createField('Details:', 'text', 'details', 'details', true);
+    const { label: detailsLabel, input: detailsInput } = createField('Details:', 'text', 'details', 'details', false);
   
     const { label: recommendationsLabel, input: recommendationsInput } = createField('Recommendations:', 'text', 'recommendations', 'recommendations', true);
 
@@ -114,3 +114,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+
+
