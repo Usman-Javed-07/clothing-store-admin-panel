@@ -34,28 +34,29 @@
       </div>
     </header>
 
+    <div id="ordersContainer">
+      <h2 class="order--details">Order Details</h2>
+      <table id="ordersTable">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Total Amount</th>
+            <th>Order Items</th>
+            <th>User Details</th>
+            <th>Created At</th>
+          </tr>
+        </thead>
+        <tbody id="ordersTableBody">
+          <!-- Order data will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
 
-      <div id="ordersContainer">
-          <h2 class="order--details">Order Details</h2>
-          <table id="ordersTable">
-            <thead>
-              <tr>
-                <th>Order ID</th>
-                <th>Total Amount</th>
-                <th>Order Items</th>
-                <th>Created At</th>
-              </tr>
-            </thead>
-            <tbody>
-      
-            </tbody>
-          </table>
-        </div>
-   
-      <footer>
-        <p>&copy; <span id="current-year"></span> Virtual Wardrobe. All rights reserved.</p>
-      </footer>
-      <script src="./javaScript/orders.js"></script>
-      <script src="./javaScript/currentDate.js"></script>
+    <footer>
+      <p>&copy; <span id="current-year"></span> Virtual Wardrobe. All rights reserved.</p>
+    </footer>
+    
+    <script src="./javaScript/orders.js"></script>
+    <script src="./javaScript/currentDate.js"></script>
 </body>
 </html>
