@@ -1,6 +1,7 @@
-
 document.addEventListener("DOMContentLoaded", async () => {
-  const ordersTableBody = document.getElementById("ordersTable").getElementsByTagName('tbody')[0];
+  const ordersTableBody = document
+    .getElementById("ordersTable")
+    .getElementsByTagName("tbody")[0];
 
   try {
     const response = await fetch("http://localhost:5000/api/orders/all");
@@ -9,9 +10,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const orders = await response.json();
-    ordersTableBody.innerHTML = '';
+    ordersTableBody.innerHTML = "";
 
-    orders.forEach(order => {
+    orders.forEach((order) => {
       const row = ordersTableBody.insertRow();
 
       const orderIdCell = row.insertCell(0);
@@ -23,10 +24,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       orderIdCell.textContent = order.id;
       totalAmountCell.textContent = `$${order.totalAmount.toFixed(2)}`;
 
-      const orderItems = JSON.parse(order.orderItems); 
-      orderItemsCell.textContent = orderItems.map(item => `${item.name} (x${item.quantity}): $${item.subtotal}`).join(', ');
+      const orderItems = JSON.parse(order.orderItems);
+      orderItemsCell.textContent = orderItems
+        .map((item) => `${item.name} (x${item.quantity}): $${item.subtotal}`)
+        .join(", ");
 
-      const userDetails = JSON.parse(order.userDetails); 
+      const userDetails = JSON.parse(order.userDetails);
       userDetailsCell.textContent = `Name: ${userDetails.name}, Email: ${userDetails.email}, Address: ${userDetails.address}, Zip Code: ${userDetails.zipCode}`;
 
       createdAtCell.textContent = new Date(order.createdAt).toLocaleString();

@@ -1,4 +1,3 @@
-
 function showModalMessage(message) {
   const modalMessage = document.getElementById("modalMessage");
   modalMessage.textContent = message;

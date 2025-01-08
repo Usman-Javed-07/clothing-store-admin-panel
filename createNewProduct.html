@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clothing Store</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,49 +24,58 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
   </head>
-<body>
-
-<!--  bootstrap model -->
-<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="messageModalLabel">Message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p id="modalMessage"></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <body>
+    <!--  bootstrap model -->
+    <div
+      class="modal fade"
+      id="messageModal"
+      tabindex="-1"
+      aria-labelledby="messageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="messageModalLabel">Message</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="modalMessage"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-
-<!--  -->
 
     <header>
       <nav class="navbar-container">
         <div class="navbar-logo">
-          <img src="./images/placeholder design.png" alt="Logo">
+          <img src="./images/placeholder design.png" alt="Logo" />
         </div>
         <div class="navbar-links">
           <ul class="list-items">
             <li><a href="./clothing.html">Products</a></li>
             <li><a href="./createNewProduct.html">Add Product</a></li>
             <li><a href="./orderDetails.html">Orders</a></li>
-            <li ><a class="logout-button" href="./login.html">Logout</a></li>
+            <li><a class="logout-button" href="./login.html">Logout</a></li>
           </ul>
         </div>
         <!-- Hamburger Menu for smaller screens -->
-        <div class="hamburger-menu" onclick="toggleDropdown()">
-          &#9776;
-        </div>
+        <div class="hamburger-menu" onclick="toggleDropdown()">&#9776;</div>
       </nav>
 
       <div class="dropdown-menu">
@@ -73,14 +88,14 @@
       </div>
     </header>
 
-<!-- main section -->
-
-
-<footer>
-    <p>&copy; <span id="current-year"></span> Virtual Wardrobe. All rights reserved.</p>
-  </footer>
-  <script src="./javaScript/script.js"></script>
-  <script src="./javaScript/currentDate.js"></script>
-     <script src="./javaScript/addProduct.js"></script>
-</body>
+    <footer>
+      <p>
+        &copy; <span id="current-year"></span> Virtual Wardrobe. All rights
+        reserved.
+      </p>
+    </footer>
+    <script src="./javaScript/script.js"></script>
+    <script src="./javaScript/currentDate.js"></script>
+    <script src="./javaScript/addProduct.js"></script>
+  </body>
 </html>

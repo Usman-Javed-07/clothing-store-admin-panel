@@ -70,8 +70,6 @@ footer {
         padding: 10px 0;
         background-color: #e6d5be;
         z-index: 1000; 
-    
-    
 }
 
 .shop-container {
@@ -121,7 +119,6 @@ footer {
     background-color: #45a049;
 }
 
-/* Mobile responsive design */
 @media (max-width: 600px) {
     #productForm {
         grid-template-columns: 1fr;
@@ -329,9 +326,6 @@ button {
     }
 }
 
-
-/*  */
-
 .signup-form-container {
     max-width: 400px;
     margin: 50px auto;
@@ -341,7 +335,6 @@ button {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
 .signup-heading {
     text-align: center;
     font-size: 24px;
@@ -350,13 +343,11 @@ button {
     margin-bottom: 20px;
 }
 
-/* Form styling */
 .signup-form {
     display: flex;
     flex-direction: column;
 }
 
-/* Form field styling */
 .form-group {
     margin-bottom: 15px;
 }
@@ -382,8 +373,6 @@ button {
     border-color: #007bff;
 }
 
-
-/* Button styling */
 .btn-submit {
     padding: 12px;
     font-size: 16px;
@@ -408,7 +397,6 @@ button {
     color: red;
 }
 
-/* Responsive design for mobile */
 @media (max-width: 480px) {
     .signup-form-container {
         width: 90%;
@@ -436,7 +424,6 @@ button {
 
 }
 
-/* Heading */
 .login-heading {
     font-size: 28px;
     font-weight: bold;
@@ -444,13 +431,11 @@ button {
     margin-bottom: 20px;
 }
 
-/* Form styling */
 .login-form {
     display: flex;
     flex-direction: column;
 }
 
-/* Form field styling */
 .form-group {
     margin-bottom: 20px;
     text-align: left;
@@ -477,7 +462,6 @@ button {
     border-color: #007bff;
 }
 
-/* Submit button styling */
 .btn-submit {
     padding: 12px;
     font-size: 16px;
@@ -503,7 +487,6 @@ button {
     color: red;
 }
 
-/* Responsive design for mobile */
 @media (max-width: 480px) {
     .login-container {
         width: 90%;
