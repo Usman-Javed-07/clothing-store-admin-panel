@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Clothing Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<!--  -->
+<!-- Modal -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="messageModalLabel">Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalMessage"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!--  -->
+    <div class="signup-form-container">
+        <h1 class="signup-heading">Create Your Account</h1>
+        <form id="signupForm" class="signup-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <span id="emailMessage"></span>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <span id="firstnameMessage"></span>
+                <input type="text" id="firstname" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <span id="lastnameMessage"></span>
+                <input type="text" id="lastname" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <span id="passwordMessage"></span>
+                <input type="password" id="password" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Confirm Password:</label>
+                <span id="confirmPasswordMessage"></span>
+                <input type="password" id="confirmPassword" class="form-control" required>
+                
+            </div>
+    
+            <button type="submit" class="btn-submit">Sign Up</button>
+        </form>
+
+        <div class="goto-login">
+            <p>Already have an account ?</p>
+            <a href="login.html">Login</a>
+        </div>
+
+    </div>
+    
+    <script src="./javaScript/script.js"></script>
+</body>
+</html>

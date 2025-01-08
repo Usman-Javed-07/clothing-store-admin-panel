@@ -251,6 +251,7 @@ button {
   .dropdown-menu .list-items li {
     padding: 10px 15px;
     border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
   }
 
   @media (max-width: 768px) {
@@ -260,7 +261,9 @@ button {
     .navbar-links {
       display: none; 
     }
-
+    ul.list-items {
+        margin-bottom: 30px;
+    }
     .hamburger-menu {
       display: block; 
     }
@@ -324,4 +327,217 @@ button {
     .order--details {
         font-size: 18px;
     }
+}
+
+
+/*  */
+
+.signup-form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.signup-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form field styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+}
+
+
+/* Button styling */
+.btn-submit {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+.goto-login {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.goto-login a {
+    text-decoration: none;
+    color: red;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+    .signup-form-container {
+        width: 90%;
+    }
+
+    .signup-heading {
+        font-size: 20px;
+    }
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+
+}
+
+/* Heading */
+.login-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form field styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+}
+
+/* Submit button styling */
+.btn-submit {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+.goto-signup {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+    justify-content: center;
+}
+.goto-signup a {
+    text-decoration: none;
+    color: red;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-heading {
+        font-size: 24px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+}
+
+.logout-button {
+    background-color: #007bff;
+    padding: 10px 15px;
+    color: #fff !important;
+    border-radius: 8px;
+    font-weight: 400 !important;
+    margin-left: 40px;
+}
+.logout-button:hover {
+    background-color: #0056b3;
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 768px) {
+
+    .logout-button {
+        margin-left: 0px;
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+    }
+   
 }
