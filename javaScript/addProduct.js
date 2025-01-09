@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     return { label, input };
   };
-
+  
   const { label: nameLabel, input: nameInput } = createField(
     "Product Name:",
     "text",
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: imageUrlInput.value,
       quantity: parseInt(quantityInput.value),
       material: materialInput.value,
-      care: careInput.value,
+      care_instructions: careInput.value,
       fit: fitInput.value,
       details: detailsInput.value,
       recommendations: recommendationsInput.value,
